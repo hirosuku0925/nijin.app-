@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- プロファイル全体の基本情報 -->
+    <key>PayloadDisplayName</key>
+    <string>nijin.app PWA ショートカット</string>
+    <key>PayloadIdentifier</key>
+    <string>com.example.nijin.webclip</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>ここに1つ目のUUIDを記述</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+
+    <!-- 格納するペイロードのリスト -->
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadIdentifier</key>
+            <string>com.example.nijin.webclip.payload</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>ここに2つ目のUUIDを記述</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+
+            <!-- Webクリップ（PWA）の設定内容 -->
+            <key>URL</key>
+            <string>https://www.nijin.app/</string>
+            <key>Label</key>
+            <string>nijin.app</string>
+            
+            <!-- アドレスバーを非表示にし、全画面（スタンドアロン）で起動する設定 -->
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+        </dict>
+    </array>
+</dict>
+</plist>
